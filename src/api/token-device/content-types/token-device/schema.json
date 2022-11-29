@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "token_devices",
+  "info": {
+    "singularName": "token-device",
+    "pluralName": "token-devices",
+    "displayName": "Token_Device",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "token": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "token_device"
+    },
+    "userId": {
+      "type": "integer"
+    }
+  }
+}

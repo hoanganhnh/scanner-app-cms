@@ -20,6 +20,7 @@
     "@strapi/utils": "^4.5.2",
     "better-sqlite3": "7.4.6",
     "cloudinary": "^1.32.0",
+    "expo-server-sdk": "^3.7.0",
     "pg": "^8.8.0",
     "pg-connection-string": "^2.5.0"
   },

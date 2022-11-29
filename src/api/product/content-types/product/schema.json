@@ -27,21 +27,31 @@
     "code": {
       "type": "string"
     },
-    "exprie_date": {
+    "expireDate": {
       "type": "date"
     },
-    "purchase_date": {
+    "purchaseDate": {
       "type": "date"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "notifications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::notification.notification",
+      "mappedBy": "product"
+    },
+    "bestBeforeDay": {
+      "type": "integer"
     }
   }
 }
