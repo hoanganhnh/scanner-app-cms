@@ -52,6 +52,9 @@
     },
     "bestBeforeDay": {
       "type": "integer"
+    },
+    "classification": {
+      "type": "string"
     }
   }
 }
