@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-11-30T02:36:24.440Z"
+    "x-generation-date": "2022-11-30T10:35:40.089Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1394,6 +1394,9 @@
                                         },
                                         "classification": {
                                           "type": "string"
+                                        },
+                                        "userId": {
+                                          "type": "integer"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -2935,6 +2938,9 @@
                                         },
                                         "classification": {
                                           "type": "string"
+                                        },
+                                        "userId": {
+                                          "type": "integer"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -4510,6 +4516,9 @@
                                         "classification": {
                                           "type": "string"
                                         },
+                                        "userId": {
+                                          "type": "integer"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -6051,6 +6060,9 @@
                                         "classification": {
                                           "type": "string"
                                         },
+                                        "userId": {
+                                          "type": "integer"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -6410,6 +6422,9 @@
               },
               "classification": {
                 "type": "string"
+              },
+              "userId": {
+                "type": "integer"
               }
             }
           }
@@ -7675,6 +7690,9 @@
                                         "classification": {
                                           "type": "string"
                                         },
+                                        "userId": {
+                                          "type": "integer"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -8540,6 +8558,9 @@
               },
               "classification": {
                 "type": "string"
+              },
+              "userId": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -9851,6 +9872,9 @@
                                         "classification": {
                                           "type": "string"
                                         },
+                                        "userId": {
+                                          "type": "integer"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -10716,6 +10740,9 @@
               },
               "classification": {
                 "type": "string"
+              },
+              "userId": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -12060,6 +12087,9 @@
                                         "classification": {
                                           "type": "string"
                                         },
+                                        "userId": {
+                                          "type": "integer"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -12925,6 +12955,9 @@
               },
               "classification": {
                 "type": "string"
+              },
+              "userId": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -14236,6 +14269,9 @@
                                         "classification": {
                                           "type": "string"
                                         },
+                                        "userId": {
+                                          "type": "integer"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -15101,6 +15137,9 @@
               },
               "classification": {
                 "type": "string"
+              },
+              "userId": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -16449,6 +16488,9 @@
                                         },
                                         "classification": {
                                           "type": "string"
+                                        },
+                                        "userId": {
+                                          "type": "integer"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -17967,6 +18009,9 @@
                                         },
                                         "classification": {
                                           "type": "string"
+                                        },
+                                        "userId": {
+                                          "type": "integer"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -19519,6 +19564,9 @@
                                         "classification": {
                                           "type": "string"
                                         },
+                                        "userId": {
+                                          "type": "integer"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -21036,6 +21084,9 @@
                                         },
                                         "classification": {
                                           "type": "string"
+                                        },
+                                        "userId": {
+                                          "type": "integer"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -27663,6 +27714,9 @@
                                                       "classification": {
                                                         "type": "string"
                                                       },
+                                                      "userId": {
+                                                        "type": "integer"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -29173,6 +29227,9 @@
                                                       },
                                                       "classification": {
                                                         "type": "string"
+                                                      },
+                                                      "userId": {
+                                                        "type": "integer"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -30718,6 +30775,9 @@
                                                       "classification": {
                                                         "type": "string"
                                                       },
+                                                      "userId": {
+                                                        "type": "integer"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -32228,6 +32288,9 @@
                                                       },
                                                       "classification": {
                                                         "type": "string"
+                                                      },
+                                                      "userId": {
+                                                        "type": "integer"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -33762,6 +33825,9 @@
                                                                     },
                                                                     "classification": {
                                                                       "type": "string"
+                                                                    },
+                                                                    "userId": {
+                                                                      "type": "integer"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -35302,6 +35368,9 @@
                                                                     },
                                                                     "classification": {
                                                                       "type": "string"
+                                                                    },
+                                                                    "userId": {
+                                                                      "type": "integer"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -36876,6 +36945,9 @@
                                                                     "classification": {
                                                                       "type": "string"
                                                                     },
+                                                                    "userId": {
+                                                                      "type": "integer"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -38415,6 +38487,9 @@
                                                                     },
                                                                     "classification": {
                                                                       "type": "string"
+                                                                    },
+                                                                    "userId": {
+                                                                      "type": "integer"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -40119,6 +40194,9 @@
                                                       "classification": {
                                                         "type": "string"
                                                       },
+                                                      "userId": {
+                                                        "type": "integer"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -41705,6 +41783,9 @@
                                                       },
                                                       "classification": {
                                                         "type": "string"
+                                                      },
+                                                      "userId": {
+                                                        "type": "integer"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -43326,6 +43407,9 @@
                                                       "classification": {
                                                         "type": "string"
                                                       },
+                                                      "userId": {
+                                                        "type": "integer"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -44912,6 +44996,9 @@
                                                       },
                                                       "classification": {
                                                         "type": "string"
+                                                      },
+                                                      "userId": {
+                                                        "type": "integer"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",

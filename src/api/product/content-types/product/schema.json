@@ -55,6 +55,9 @@
     },
     "classification": {
       "type": "string"
+    },
+    "userId": {
+      "type": "integer"
     }
   }
 }
