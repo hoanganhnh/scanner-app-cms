@@ -15,9 +15,6 @@
     "name": {
       "type": "string"
     },
-    "quantity": {
-      "type": "integer"
-    },
     "user": {
       "type": "relation",
       "relation": "manyToOne",

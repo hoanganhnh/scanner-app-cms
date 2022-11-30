@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-11-30T10:35:40.089Z"
+    "x-generation-date": "2022-11-30T12:51:09.033Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -623,9 +623,6 @@
                                       "properties": {
                                         "name": {
                                           "type": "string"
-                                        },
-                                        "quantity": {
-                                          "type": "integer"
                                         },
                                         "user": {
                                           "type": "object",
@@ -2167,9 +2164,6 @@
                                       "properties": {
                                         "name": {
                                           "type": "string"
-                                        },
-                                        "quantity": {
-                                          "type": "integer"
                                         },
                                         "user": {
                                           "type": "object",
@@ -3745,9 +3739,6 @@
                                         "name": {
                                           "type": "string"
                                         },
-                                        "quantity": {
-                                          "type": "integer"
-                                        },
                                         "user": {
                                           "type": "object",
                                           "properties": {
@@ -5289,9 +5280,6 @@
                                         "name": {
                                           "type": "string"
                                         },
-                                        "quantity": {
-                                          "type": "integer"
-                                        },
                                         "user": {
                                           "type": "object",
                                           "properties": {
@@ -6367,9 +6355,6 @@
               "name": {
                 "type": "string"
               },
-              "quantity": {
-                "type": "integer"
-              },
               "user": {
                 "oneOf": [
                   {
@@ -6441,9 +6426,6 @@
             "properties": {
               "name": {
                 "type": "string"
-              },
-              "quantity": {
-                "type": "integer"
               },
               "user": {
                 "type": "object",
@@ -6918,9 +6900,6 @@
                                       "properties": {
                                         "name": {
                                           "type": "string"
-                                        },
-                                        "quantity": {
-                                          "type": "integer"
                                         },
                                         "user": {
                                           "type": "object",
@@ -8624,9 +8603,6 @@
               "name": {
                 "type": "string"
               },
-              "quantity": {
-                "type": "integer"
-              },
               "user": {
                 "type": "object",
                 "properties": {
@@ -9100,9 +9076,6 @@
                                       "properties": {
                                         "name": {
                                           "type": "string"
-                                        },
-                                        "quantity": {
-                                          "type": "integer"
                                         },
                                         "user": {
                                           "type": "object",
@@ -10839,9 +10812,6 @@
               "name": {
                 "type": "string"
               },
-              "quantity": {
-                "type": "integer"
-              },
               "user": {
                 "type": "object",
                 "properties": {
@@ -11315,9 +11285,6 @@
                                       "properties": {
                                         "name": {
                                           "type": "string"
-                                        },
-                                        "quantity": {
-                                          "type": "integer"
                                         },
                                         "user": {
                                           "type": "object",
@@ -13021,9 +12988,6 @@
               "name": {
                 "type": "string"
               },
-              "quantity": {
-                "type": "integer"
-              },
               "user": {
                 "type": "object",
                 "properties": {
@@ -13497,9 +13461,6 @@
                                       "properties": {
                                         "name": {
                                           "type": "string"
-                                        },
-                                        "quantity": {
-                                          "type": "integer"
                                         },
                                         "user": {
                                           "type": "object",
@@ -15718,9 +15679,6 @@
                                         "name": {
                                           "type": "string"
                                         },
-                                        "quantity": {
-                                          "type": "integer"
-                                        },
                                         "user": {
                                           "type": "object",
                                           "properties": {
@@ -17238,9 +17196,6 @@
                                       "properties": {
                                         "name": {
                                           "type": "string"
-                                        },
-                                        "quantity": {
-                                          "type": "integer"
                                         },
                                         "user": {
                                           "type": "object",
@@ -18793,9 +18748,6 @@
                                         "name": {
                                           "type": "string"
                                         },
-                                        "quantity": {
-                                          "type": "integer"
-                                        },
                                         "user": {
                                           "type": "object",
                                           "properties": {
@@ -20313,9 +20265,6 @@
                                       "properties": {
                                         "name": {
                                           "type": "string"
-                                        },
-                                        "quantity": {
-                                          "type": "integer"
                                         },
                                         "user": {
                                           "type": "object",
@@ -26943,9 +26892,6 @@
                                                       "name": {
                                                         "type": "string"
                                                       },
-                                                      "quantity": {
-                                                        "type": "integer"
-                                                      },
                                                       "user": {
                                                         "type": "object",
                                                         "properties": {
@@ -28456,9 +28402,6 @@
                                                     "properties": {
                                                       "name": {
                                                         "type": "string"
-                                                      },
-                                                      "quantity": {
-                                                        "type": "integer"
                                                       },
                                                       "user": {
                                                         "type": "object",
@@ -30004,9 +29947,6 @@
                                                       "name": {
                                                         "type": "string"
                                                       },
-                                                      "quantity": {
-                                                        "type": "integer"
-                                                      },
                                                       "user": {
                                                         "type": "object",
                                                         "properties": {
@@ -31518,9 +31458,6 @@
                                                       "name": {
                                                         "type": "string"
                                                       },
-                                                      "quantity": {
-                                                        "type": "integer"
-                                                      },
                                                       "user": {
                                                         "type": "object",
                                                         "properties": {
@@ -32803,9 +32740,6 @@
                                                                   "properties": {
                                                                     "name": {
                                                                       "type": "string"
-                                                                    },
-                                                                    "quantity": {
-                                                                      "type": "integer"
                                                                     },
                                                                     "user": {
                                                                       "type": "object",
@@ -34346,9 +34280,6 @@
                                                                   "properties": {
                                                                     "name": {
                                                                       "type": "string"
-                                                                    },
-                                                                    "quantity": {
-                                                                      "type": "integer"
                                                                     },
                                                                     "user": {
                                                                       "type": "object",
@@ -35923,9 +35854,6 @@
                                                                     "name": {
                                                                       "type": "string"
                                                                     },
-                                                                    "quantity": {
-                                                                      "type": "integer"
-                                                                    },
                                                                     "user": {
                                                                       "type": "object",
                                                                       "properties": {
@@ -37465,9 +37393,6 @@
                                                                   "properties": {
                                                                     "name": {
                                                                       "type": "string"
-                                                                    },
-                                                                    "quantity": {
-                                                                      "type": "integer"
                                                                     },
                                                                     "user": {
                                                                       "type": "object",
@@ -39423,9 +39348,6 @@
                                                       "name": {
                                                         "type": "string"
                                                       },
-                                                      "quantity": {
-                                                        "type": "integer"
-                                                      },
                                                       "user": {
                                                         "type": "object",
                                                         "properties": {
@@ -41012,9 +40934,6 @@
                                                     "properties": {
                                                       "name": {
                                                         "type": "string"
-                                                      },
-                                                      "quantity": {
-                                                        "type": "integer"
                                                       },
                                                       "user": {
                                                         "type": "object",
@@ -42636,9 +42555,6 @@
                                                       "name": {
                                                         "type": "string"
                                                       },
-                                                      "quantity": {
-                                                        "type": "integer"
-                                                      },
                                                       "user": {
                                                         "type": "object",
                                                         "properties": {
@@ -44225,9 +44141,6 @@
                                                     "properties": {
                                                       "name": {
                                                         "type": "string"
-                                                      },
-                                                      "quantity": {
-                                                        "type": "integer"
                                                       },
                                                       "user": {
                                                         "type": "object",
