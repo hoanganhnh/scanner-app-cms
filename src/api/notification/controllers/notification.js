@@ -22,13 +22,6 @@ module.exports = createCoreController(
             userId: data.attributes.userId,
           },
         });
-      // @todo: hanle respone and interact respond in UI
-      // some more logic
-      // const product = await strapi.db.query("api::product.product").findOne({
-      //   where: {
-      //     id: data.attributes.productId,
-      //   },
-      // });
       handleSendNotification(
         tokenDevice.token,
         "default",

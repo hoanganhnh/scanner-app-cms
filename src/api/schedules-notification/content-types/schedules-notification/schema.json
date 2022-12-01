@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedules_notifications",
+  "info": {
+    "singularName": "schedules-notification",
+    "pluralName": "schedules-notifications",
+    "displayName": "Schedules_Notification",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "trigger": {
+      "type": "boolean"
+    }
+  }
+}

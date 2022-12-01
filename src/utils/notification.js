@@ -2,23 +2,17 @@ const { Expo } = require("expo-server-sdk");
 
 const expo = new Expo({});
 
-function handleSendNotifications(
-  somePushTokens = ["ExponentPushToken[cktiTNEKs_KfyP_kQJfsyG]"]
-) {
+function handleSendNotifications(pushToken) {
   const messages = [];
-  for (let pushToken of somePushTokens) {
-    if (!Expo.isExpoPushToken(pushToken)) {
-      console.error(`Push token ${pushToken} is not a valid Expo push token`);
-      continue;
-    }
-    messages.push({
-      to: pushToken,
-      sound: "default",
-      title: "Title",
-      body: "This is a test notification",
-      data: { withSome: "data" },
-    });
+  if (!Expo.isExpoPushToken(pushToken)) {
+    console.error(`Push token ${pushToken} is not a valid Expo push token`);
   }
+  messages.push({
+    to: pushToken,
+    sound: "default",
+    title: "Title",
+    body: "This is a test notification",
+  });
 
   const chunks = expo.chunkPushNotifications(messages);
   (async () => {
@@ -34,24 +28,19 @@ function handleSendNotifications(
   })();
 }
 
-async function handleSendNotification(
-  pushToken,
-  sound = "default",
-  title,
-  body,
-  data = {}
-) {
+async function handleSendNotification(pushToken, title, body, data = {}) {
   if (!Expo.isExpoPushToken(pushToken)) {
     console.error(`Push token ${pushToken} is not a valid Expo push token`);
     return;
   }
   const payload = {
     to: pushToken,
-    sound,
+    sound: "default",
     title,
     body,
     body,
     data,
+    priority: "high",
   };
   try {
     let receipts = await expo.sendPushNotificationsAsync([payload]);
