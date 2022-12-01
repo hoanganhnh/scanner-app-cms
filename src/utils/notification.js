@@ -2,7 +2,7 @@ const { Expo } = require("expo-server-sdk");
 
 const expo = new Expo({});
 
-function handleSendNotifications(pushToken) {
+function handleSendNotifications(pushToken, { title, body }) {
   const messages = [];
   if (!Expo.isExpoPushToken(pushToken)) {
     console.error(`Push token ${pushToken} is not a valid Expo push token`);
@@ -10,17 +10,15 @@ function handleSendNotifications(pushToken) {
   messages.push({
     to: pushToken,
     sound: "default",
-    title: "Title",
-    body: "This is a test notification",
+    title,
+    body,
   });
 
   const chunks = expo.chunkPushNotifications(messages);
   (async () => {
     for (let chunk of chunks) {
       try {
-        console.log(chunk);
-        let receipts = await expo.sendPushNotificationsAsync(chunk);
-        console.log(receipts);
+        await expo.sendPushNotificationsAsync(chunk);
       } catch (error) {
         console.error(error);
       }
@@ -37,7 +35,6 @@ async function handleSendNotification(pushToken, title, body, data = {}) {
     to: pushToken,
     sound: "default",
     title,
-    body,
     body,
     data,
     priority: "high",

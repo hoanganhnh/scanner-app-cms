@@ -12,11 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "body": {
-      "type": "string"
+    "message": {
+      "type": "text"
     },
     "user": {
       "type": "relation",

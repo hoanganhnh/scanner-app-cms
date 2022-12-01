@@ -47,14 +47,14 @@
       "target": "api::notification.notification",
       "mappedBy": "product"
     },
-    "bestBeforeDay": {
-      "type": "integer"
-    },
     "classification": {
       "type": "string"
     },
     "userId": {
       "type": "integer"
+    },
+    "bestBeforeDay": {
+      "type": "datetime"
     }
   }
 }

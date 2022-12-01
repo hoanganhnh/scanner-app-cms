@@ -24,7 +24,6 @@ module.exports = createCoreController(
         });
       handleSendNotification(
         tokenDevice.token,
-        "default",
         data.attributes.title,
         data.attributes.body,
         // { url: `product/${data.attributes.productId}` }
