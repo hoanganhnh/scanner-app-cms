@@ -55,6 +55,9 @@
     },
     "bestBeforeDay": {
       "type": "datetime"
+    },
+    "like": {
+      "type": "boolean"
     }
   }
 }

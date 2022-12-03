@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-12-01T13:49:30.305Z"
+    "x-generation-date": "2022-12-01T15:16:18.140Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1386,6 +1386,9 @@
                                         "bestBeforeDay": {
                                           "type": "string",
                                           "format": "date-time"
+                                        },
+                                        "like": {
+                                          "type": "boolean"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -2922,6 +2925,9 @@
                                         "bestBeforeDay": {
                                           "type": "string",
                                           "format": "date-time"
+                                        },
+                                        "like": {
+                                          "type": "boolean"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -4492,6 +4498,9 @@
                                           "type": "string",
                                           "format": "date-time"
                                         },
+                                        "like": {
+                                          "type": "boolean"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -6028,6 +6037,9 @@
                                           "type": "string",
                                           "format": "date-time"
                                         },
+                                        "like": {
+                                          "type": "boolean"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -6388,6 +6400,9 @@
               "bestBeforeDay": {
                 "type": "string",
                 "format": "date-time"
+              },
+              "like": {
+                "type": "boolean"
               }
             }
           }
@@ -7648,6 +7663,9 @@
                                           "type": "string",
                                           "format": "date-time"
                                         },
+                                        "like": {
+                                          "type": "boolean"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -8517,6 +8535,9 @@
               "bestBeforeDay": {
                 "type": "string",
                 "format": "date-time"
+              },
+              "like": {
+                "type": "boolean"
               },
               "createdAt": {
                 "type": "string",
@@ -9823,6 +9844,9 @@
                                           "type": "string",
                                           "format": "date-time"
                                         },
+                                        "like": {
+                                          "type": "boolean"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -10692,6 +10716,9 @@
               "bestBeforeDay": {
                 "type": "string",
                 "format": "date-time"
+              },
+              "like": {
+                "type": "boolean"
               },
               "createdAt": {
                 "type": "string",
@@ -12031,6 +12058,9 @@
                                           "type": "string",
                                           "format": "date-time"
                                         },
+                                        "like": {
+                                          "type": "boolean"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -12900,6 +12930,9 @@
               "bestBeforeDay": {
                 "type": "string",
                 "format": "date-time"
+              },
+              "like": {
+                "type": "boolean"
               },
               "createdAt": {
                 "type": "string",
@@ -14206,6 +14239,9 @@
                                           "type": "string",
                                           "format": "date-time"
                                         },
+                                        "like": {
+                                          "type": "boolean"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -15075,6 +15111,9 @@
               "bestBeforeDay": {
                 "type": "string",
                 "format": "date-time"
+              },
+              "like": {
+                "type": "boolean"
               },
               "createdAt": {
                 "type": "string",
@@ -16421,6 +16460,9 @@
                                         "bestBeforeDay": {
                                           "type": "string",
                                           "format": "date-time"
+                                        },
+                                        "like": {
+                                          "type": "boolean"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -17937,6 +17979,9 @@
                                         "bestBeforeDay": {
                                           "type": "string",
                                           "format": "date-time"
+                                        },
+                                        "like": {
+                                          "type": "boolean"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -19487,6 +19532,9 @@
                                           "type": "string",
                                           "format": "date-time"
                                         },
+                                        "like": {
+                                          "type": "boolean"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -21002,6 +21050,9 @@
                                         "bestBeforeDay": {
                                           "type": "string",
                                           "format": "date-time"
+                                        },
+                                        "like": {
+                                          "type": "boolean"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -27627,6 +27678,9 @@
                                                         "type": "string",
                                                         "format": "date-time"
                                                       },
+                                                      "like": {
+                                                        "type": "boolean"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -29135,6 +29189,9 @@
                                                       "bestBeforeDay": {
                                                         "type": "string",
                                                         "format": "date-time"
+                                                      },
+                                                      "like": {
+                                                        "type": "boolean"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -30678,6 +30735,9 @@
                                                         "type": "string",
                                                         "format": "date-time"
                                                       },
+                                                      "like": {
+                                                        "type": "boolean"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -32186,6 +32246,9 @@
                                                       "bestBeforeDay": {
                                                         "type": "string",
                                                         "format": "date-time"
+                                                      },
+                                                      "like": {
+                                                        "type": "boolean"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -33718,6 +33781,9 @@
                                                                     "bestBeforeDay": {
                                                                       "type": "string",
                                                                       "format": "date-time"
+                                                                    },
+                                                                    "like": {
+                                                                      "type": "boolean"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -35256,6 +35322,9 @@
                                                                     "bestBeforeDay": {
                                                                       "type": "string",
                                                                       "format": "date-time"
+                                                                    },
+                                                                    "like": {
+                                                                      "type": "boolean"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -36828,6 +36897,9 @@
                                                                       "type": "string",
                                                                       "format": "date-time"
                                                                     },
+                                                                    "like": {
+                                                                      "type": "boolean"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -38365,6 +38437,9 @@
                                                                     "bestBeforeDay": {
                                                                       "type": "string",
                                                                       "format": "date-time"
+                                                                    },
+                                                                    "like": {
+                                                                      "type": "boolean"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -40067,6 +40142,9 @@
                                                         "type": "string",
                                                         "format": "date-time"
                                                       },
+                                                      "like": {
+                                                        "type": "boolean"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -41651,6 +41729,9 @@
                                                       "bestBeforeDay": {
                                                         "type": "string",
                                                         "format": "date-time"
+                                                      },
+                                                      "like": {
+                                                        "type": "boolean"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -43270,6 +43351,9 @@
                                                         "type": "string",
                                                         "format": "date-time"
                                                       },
+                                                      "like": {
+                                                        "type": "boolean"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -44854,6 +44938,9 @@
                                                       "bestBeforeDay": {
                                                         "type": "string",
                                                         "format": "date-time"
+                                                      },
+                                                      "like": {
+                                                        "type": "boolean"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
