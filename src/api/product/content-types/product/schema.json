@@ -54,10 +54,7 @@
       "type": "integer"
     },
     "bestBeforeDay": {
-      "type": "datetime"
-    },
-    "like": {
-      "type": "boolean"
+      "type": "date"
     }
   }
 }

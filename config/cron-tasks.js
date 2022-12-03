@@ -45,7 +45,47 @@ module.exports = {
       }
     },
     options: {
-      rule: "*/2 * * * *",
+      rule: "* * 9 * *",
+    },
+  },
+  pushNotificationBestBeforeDateProduct: {
+    task: async ({ strapi }) => {
+      const products = await strapi.db.query("api::product.product").findMany({
+        where: {
+          bestBeforeDay: {
+            $eq: formatCurrentDate(),
+          },
+        },
+      });
+
+      const productInfors = await Promise.all(
+        products.map(async (product) => {
+          const token = await strapi.db
+            .query("api::token-device.token-device")
+            .findOne({
+              where: {
+                userId: {
+                  $eq: product.userId,
+                },
+              },
+            });
+          return {
+            name: product.name,
+            tokenDevice: token.token,
+          };
+        })
+      );
+
+      for (const product of productInfors) {
+        await handleSendNotification(
+          product.tokenDevice,
+          "Expire product",
+          `Note that the product  ${product.name} is about to expire !`
+        );
+      }
+    },
+    options: {
+      rule: "* * 9 * *",
     },
   },
 };
