@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "notifications",
+  "collectionName": "items",
   "info": {
-    "singularName": "notification",
-    "pluralName": "notifications",
-    "displayName": "Notification",
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "Item",
     "description": ""
   },
   "options": {
@@ -12,11 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "message": {
-      "type": "text"
+    "name": {
+      "type": "string"
     },
     "userId": {
       "type": "integer"
+    },
+    "checked": {
+      "type": "boolean"
     }
   }
 }

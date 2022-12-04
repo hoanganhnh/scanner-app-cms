@@ -74,12 +74,6 @@
       "relation": "oneToOne",
       "target": "api::token-device.token-device",
       "mappedBy": "user"
-    },
-    "notifications": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::notification.notification",
-      "mappedBy": "user"
     }
   }
 }

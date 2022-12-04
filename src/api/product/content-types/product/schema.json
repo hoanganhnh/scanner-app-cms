@@ -41,12 +41,6 @@
         "audios"
       ]
     },
-    "notifications": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::notification.notification",
-      "mappedBy": "product"
-    },
     "classification": {
       "type": "string"
     },

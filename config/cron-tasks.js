@@ -1,5 +1,45 @@
+const { Strapi } = require("@strapi/strapi/lib/Strapi");
+
 const formatCurrentDate = require("../src/utils/time");
 const { handleSendNotification } = require("../src/utils/notification");
+
+async function findNotification(userId, message) {
+  const noti = await strapi.db
+    .query("api::notification.notification")
+    .findMany({
+      where: {
+        userId,
+        message,
+      },
+    });
+  return noti[0];
+}
+
+async function publishedNotifications() {
+  const notifiocations = await strapi.db
+    .query("api::notification.notification")
+    .findMany({
+      where: {
+        publishedAt: {
+          $null: true,
+        },
+      },
+    });
+
+  await Promise.all(
+    notifiocations.map((notifiocation) => {
+      return strapi.entityService.update(
+        "api::notification.notification",
+        notifiocation.id,
+        {
+          data: {
+            publishedAt: new Date(),
+          },
+        }
+      );
+    })
+  );
+}
 
 module.exports = {
   /**
@@ -10,7 +50,7 @@ module.exports = {
   /* \[SECOND (optional)\] [MINUTE] \[HOUR\] [DAY OF MONTH] \[MONTH OF YEAR\] [DAY OF WEEK] */
   // send expire date product
   pushNotificationExpireDateProduct: {
-    task: async ({ strapi }) => {
+    task: async () => {
       const products = await strapi.db.query("api::product.product").findMany({
         where: {
           expireDate: {
@@ -18,7 +58,7 @@ module.exports = {
           },
         },
       });
-      const productInfors = await Promise.all(
+      const productNotifications = await Promise.all(
         products.map(async (product) => {
           const token = await strapi.db
             .query("api::token-device.token-device")
@@ -32,24 +72,39 @@ module.exports = {
           return {
             name: product.name,
             tokenDevice: token.token,
+            userId: product.userId,
           };
         })
       );
 
-      for (const product of productInfors) {
-        await handleSendNotification(
-          product.tokenDevice,
-          "Expire product",
-          `Product ${product.name} is expired !`
-        );
+      for (const product of productNotifications) {
+        const message = `Product ${product.name} is expired !`;
+        const notification = await findNotification(product.userId, message);
+
+        if (!notification) {
+          await handleSendNotification(
+            product.tokenDevice,
+            "Expire product",
+            message
+          );
+
+          await strapi.entityService.create("api::notification.notification", {
+            data: {
+              message,
+              userId: product.userId,
+            },
+          });
+        }
       }
+
+      await publishedNotifications();
     },
     options: {
-      rule: "* * 9 * *",
+      rule: "0 9 * * *",
     },
   },
   pushNotificationBestBeforeDateProduct: {
-    task: async ({ strapi }) => {
+    task: async () => {
       const products = await strapi.db.query("api::product.product").findMany({
         where: {
           bestBeforeDay: {
@@ -58,7 +113,7 @@ module.exports = {
         },
       });
 
-      const productInfors = await Promise.all(
+      const productNotifications = await Promise.all(
         products.map(async (product) => {
           const token = await strapi.db
             .query("api::token-device.token-device")
@@ -72,20 +127,35 @@ module.exports = {
           return {
             name: product.name,
             tokenDevice: token.token,
+            userId: product.userId,
           };
         })
       );
 
-      for (const product of productInfors) {
-        await handleSendNotification(
-          product.tokenDevice,
-          "Expire product",
-          `Note that the product  ${product.name} is about to expire !`
-        );
+      for (const product of productNotifications) {
+        const message = `Product ${product.name} is to about expired !`;
+        const notification = await findNotification(product.userId, message);
+
+        if (!notification) {
+          await handleSendNotification(
+            product.tokenDevice,
+            "Expire product",
+            message
+          );
+
+          await strapi.entityService.create("api::notification.notification", {
+            data: {
+              message,
+              userId: product.userId,
+            },
+          });
+        }
       }
+
+      await publishedNotifications();
     },
     options: {
-      rule: "* * 9 * *",
+      rule: "0 9 * * *",
     },
   },
 };
