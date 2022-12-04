@@ -4,7 +4,7 @@ module.exports = {
       "_v",
       "id",
       "created_at",
-      "createdAt",
+      // "createdAt",
       "updatedAt",
       "publishedAt",
     ],
