@@ -49,6 +49,9 @@
     },
     "bestBeforeDay": {
       "type": "date"
+    },
+    "like": {
+      "type": "boolean"
     }
   }
 }

@@ -68,12 +68,6 @@
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "user"
-    },
-    "token_device": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::token-device.token-device",
-      "mappedBy": "user"
     }
   }
 }
