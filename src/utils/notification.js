@@ -29,7 +29,7 @@ function handleSendNotifications(pushToken, { title, body }) {
 async function handleSendNotification(pushToken, title, body, data = {}) {
   if (!Expo.isExpoPushToken(pushToken)) {
     console.error(`Push token ${pushToken} is not a valid Expo push token`);
-    return;
+    return false;
   }
   const payload = {
     to: pushToken,
@@ -42,8 +42,12 @@ async function handleSendNotification(pushToken, title, body, data = {}) {
   try {
     let receipts = await expo.sendPushNotificationsAsync([payload]);
     console.log(receipts);
+    if (receipts.length) {
+      return true;
+    }
   } catch (error) {
-    console.error(error);
+    console.error("Error send notifications !", error);
+    return false;
   }
 }
 

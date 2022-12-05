@@ -17,6 +17,9 @@
     },
     "userId": {
       "type": "integer"
+    },
+    "productId": {
+      "type": "integer"
     }
   }
 }
