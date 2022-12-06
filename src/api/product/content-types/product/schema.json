@@ -21,9 +21,6 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "products"
     },
-    "code": {
-      "type": "string"
-    },
     "expireDate": {
       "type": "date"
     },

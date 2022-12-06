@@ -1,5 +1,5 @@
 {
-  "/meal-users": {
+  "/product-bases": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MealUserListResponse"
+                "$ref": "#/components/schemas/ProductBaseListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Meal-user"
+        "Product-base"
       ],
       "parameters": [
         {
@@ -159,7 +159,7 @@
           "style": "deepObject"
         }
       ],
-      "operationId": "get/meal-users"
+      "operationId": "get/product-bases"
     },
     "post": {
       "responses": {
@@ -168,7 +168,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MealUserResponse"
+                "$ref": "#/components/schemas/ProductBaseResponse"
               }
             }
           }
@@ -225,23 +225,23 @@
         }
       },
       "tags": [
-        "Meal-user"
+        "Product-base"
       ],
       "parameters": [],
-      "operationId": "post/meal-users",
+      "operationId": "post/product-bases",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/MealUserRequest"
+              "$ref": "#/components/schemas/ProductBaseRequest"
             }
           }
         }
       }
     }
   },
-  "/meal-users/{id}": {
+  "/product-bases/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -249,7 +249,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MealUserResponse"
+                "$ref": "#/components/schemas/ProductBaseResponse"
               }
             }
           }
@@ -306,7 +306,7 @@
         }
       },
       "tags": [
-        "Meal-user"
+        "Product-base"
       ],
       "parameters": [
         {
@@ -320,7 +320,7 @@
           }
         }
       ],
-      "operationId": "get/meal-users/{id}"
+      "operationId": "get/product-bases/{id}"
     },
     "put": {
       "responses": {
@@ -329,7 +329,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MealUserResponse"
+                "$ref": "#/components/schemas/ProductBaseResponse"
               }
             }
           }
@@ -386,7 +386,7 @@
         }
       },
       "tags": [
-        "Meal-user"
+        "Product-base"
       ],
       "parameters": [
         {
@@ -400,13 +400,13 @@
           }
         }
       ],
-      "operationId": "put/meal-users/{id}",
+      "operationId": "put/product-bases/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/MealUserRequest"
+              "$ref": "#/components/schemas/ProductBaseRequest"
             }
           }
         }
@@ -477,7 +477,7 @@
         }
       },
       "tags": [
-        "Meal-user"
+        "Product-base"
       ],
       "parameters": [
         {
@@ -491,7 +491,7 @@
           }
         }
       ],
-      "operationId": "delete/meal-users/{id}"
+      "operationId": "delete/product-bases/{id}"
     }
   }
 }

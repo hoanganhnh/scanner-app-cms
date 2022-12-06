@@ -88,20 +88,25 @@ module.exports = {
         );
 
         if (!notification && product.tokenDevice) {
-          const res = await handleSendNotification(
-            product.tokenDevice,
-            "Expire product",
-            message
+          const noti = await strapi.entityService.create(
+            "api::notification.notification",
+            {
+              data: {
+                message,
+                userId: product.userId,
+                productId: product.productId,
+              },
+            }
           );
-          if (res) {
-            await strapi.entityService.create(
-              "api::notification.notification",
+
+          if (noti.id) {
+            await handleSendNotification(
+              product.tokenDevice,
+              "Expire product",
+              message,
               {
-                data: {
-                  message,
-                  userId: product.userId,
-                  productId: product.productId,
-                },
+                ...product,
+                messageId: noti.id,
               }
             );
           }
@@ -153,20 +158,25 @@ module.exports = {
         );
 
         if (!notification && product.tokenDevice) {
-          const res = await handleSendNotification(
-            product.tokenDevice,
-            "Expire product",
-            message
+          const noti = await strapi.entityService.create(
+            "api::notification.notification",
+            {
+              data: {
+                message,
+                userId: product.userId,
+                productId: product.productId,
+              },
+            }
           );
-          if (res) {
-            await strapi.entityService.create(
-              "api::notification.notification",
+
+          if (noti.id) {
+            await handleSendNotification(
+              product.tokenDevice,
+              "Expire product",
+              message,
               {
-                data: {
-                  message,
-                  userId: product.userId,
-                  productId: product.productId,
-                },
+                ...product,
+                messageId: noti.id,
               }
             );
           }
