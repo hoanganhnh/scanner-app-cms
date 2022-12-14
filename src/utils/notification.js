@@ -35,8 +35,7 @@ async function handleSendNotification(pushToken, title, body, data = {}) {
     sound: "default",
     title,
     body,
-    data,
-    priority: "high",
+    data: JSON.stringify(data),
   };
   try {
     let receipts = await expo.sendPushNotificationsAsync([payload]);

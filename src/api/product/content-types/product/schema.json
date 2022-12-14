@@ -49,6 +49,9 @@
     },
     "like": {
       "type": "boolean"
+    },
+    "label": {
+      "type": "string"
     }
   }
 }

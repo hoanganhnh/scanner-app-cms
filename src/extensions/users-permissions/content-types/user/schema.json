@@ -68,6 +68,15 @@
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "user"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
     }
   }
 }

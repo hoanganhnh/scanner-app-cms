@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-12-06T16:10:32.062Z"
+    "x-generation-date": "2022-12-14T16:03:10.108Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6718,6 +6718,9 @@
               },
               "like": {
                 "type": "boolean"
+              },
+              "label": {
+                "type": "string"
               }
             }
           }
@@ -7868,6 +7871,9 @@
                                         "like": {
                                           "type": "boolean"
                                         },
+                                        "label": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -7920,6 +7926,15 @@
                                 }
                               }
                             }
+                          },
+                          "age": {
+                            "type": "integer"
+                          },
+                          "phone": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "string"
                           },
                           "createdAt": {
                             "type": "string",
@@ -8610,6 +8625,9 @@
               },
               "like": {
                 "type": "boolean"
+              },
+              "label": {
+                "type": "string"
               },
               "createdAt": {
                 "type": "string",
@@ -9806,6 +9824,9 @@
                                         "like": {
                                           "type": "boolean"
                                         },
+                                        "label": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -9858,6 +9879,15 @@
                                 }
                               }
                             }
+                          },
+                          "age": {
+                            "type": "integer"
+                          },
+                          "phone": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "string"
                           },
                           "createdAt": {
                             "type": "string",
@@ -10548,6 +10578,9 @@
               },
               "like": {
                 "type": "boolean"
+              },
+              "label": {
+                "type": "string"
               },
               "createdAt": {
                 "type": "string",
@@ -11777,6 +11810,9 @@
                                         "like": {
                                           "type": "boolean"
                                         },
+                                        "label": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -11829,6 +11865,15 @@
                                 }
                               }
                             }
+                          },
+                          "age": {
+                            "type": "integer"
+                          },
+                          "phone": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "string"
                           },
                           "createdAt": {
                             "type": "string",
@@ -12519,6 +12564,9 @@
               },
               "like": {
                 "type": "boolean"
+              },
+              "label": {
+                "type": "string"
               },
               "createdAt": {
                 "type": "string",
@@ -13715,6 +13763,9 @@
                                         "like": {
                                           "type": "boolean"
                                         },
+                                        "label": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -13767,6 +13818,15 @@
                                 }
                               }
                             }
+                          },
+                          "age": {
+                            "type": "integer"
+                          },
+                          "phone": {
+                            "type": "string"
+                          },
+                          "address": {
+                            "type": "string"
                           },
                           "createdAt": {
                             "type": "string",
@@ -14457,6 +14517,9 @@
               },
               "like": {
                 "type": "boolean"
+              },
+              "label": {
+                "type": "string"
               },
               "createdAt": {
                 "type": "string",
@@ -25950,6 +26013,9 @@
                                                       "like": {
                                                         "type": "boolean"
                                                       },
+                                                      "label": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -26002,6 +26068,15 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "age": {
+                                          "type": "integer"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "address": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -27242,6 +27317,9 @@
                                                       "like": {
                                                         "type": "boolean"
                                                       },
+                                                      "label": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -27294,6 +27372,15 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "age": {
+                                          "type": "integer"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "address": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -28567,6 +28654,9 @@
                                                       "like": {
                                                         "type": "boolean"
                                                       },
+                                                      "label": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -28619,6 +28709,15 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "age": {
+                                          "type": "integer"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "address": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -29859,6 +29958,9 @@
                                                       "like": {
                                                         "type": "boolean"
                                                       },
+                                                      "label": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -29911,6 +30013,15 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "age": {
+                                          "type": "integer"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "address": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -30923,6 +31034,9 @@
                                                                     "like": {
                                                                       "type": "boolean"
                                                                     },
+                                                                    "label": {
+                                                                      "type": "string"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -31226,6 +31340,15 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "age": {
+                                                        "type": "integer"
+                                                      },
+                                                      "phone": {
+                                                        "type": "string"
+                                                      },
+                                                      "address": {
+                                                        "type": "string"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -32244,6 +32367,9 @@
                                                                     "like": {
                                                                       "type": "boolean"
                                                                     },
+                                                                    "label": {
+                                                                      "type": "string"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -32547,6 +32673,15 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "age": {
+                                                        "type": "integer"
+                                                      },
+                                                      "phone": {
+                                                        "type": "string"
+                                                      },
+                                                      "address": {
+                                                        "type": "string"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -33598,6 +33733,9 @@
                                                                     "like": {
                                                                       "type": "boolean"
                                                                     },
+                                                                    "label": {
+                                                                      "type": "string"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -33901,6 +34039,15 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "age": {
+                                                        "type": "integer"
+                                                      },
+                                                      "phone": {
+                                                        "type": "string"
+                                                      },
+                                                      "address": {
+                                                        "type": "string"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -34919,6 +35066,9 @@
                                                                     "like": {
                                                                       "type": "boolean"
                                                                     },
+                                                                    "label": {
+                                                                      "type": "string"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -35223,6 +35373,15 @@
                                                           }
                                                         }
                                                       },
+                                                      "age": {
+                                                        "type": "integer"
+                                                      },
+                                                      "phone": {
+                                                        "type": "string"
+                                                      },
+                                                      "address": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -35509,6 +35668,15 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "age": {
+                "type": "integer"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
               }
             }
           }
@@ -36629,6 +36797,9 @@
                                                       "like": {
                                                         "type": "boolean"
                                                       },
+                                                      "label": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -36681,6 +36852,15 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "age": {
+                                          "type": "integer"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "address": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -36798,6 +36978,15 @@
                     }
                   }
                 }
+              },
+              "age": {
+                "type": "integer"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
               },
               "createdAt": {
                 "type": "string",
@@ -37960,6 +38149,9 @@
                                                       "like": {
                                                         "type": "boolean"
                                                       },
+                                                      "label": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -38012,6 +38204,15 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "age": {
+                                          "type": "integer"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "address": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -38129,6 +38330,15 @@
                     }
                   }
                 }
+              },
+              "age": {
+                "type": "integer"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
               },
               "createdAt": {
                 "type": "string",
@@ -39324,6 +39534,9 @@
                                                       "like": {
                                                         "type": "boolean"
                                                       },
+                                                      "label": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -39376,6 +39589,15 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "age": {
+                                          "type": "integer"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "address": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -39493,6 +39715,15 @@
                     }
                   }
                 }
+              },
+              "age": {
+                "type": "integer"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
               },
               "createdAt": {
                 "type": "string",
@@ -40655,6 +40886,9 @@
                                                       "like": {
                                                         "type": "boolean"
                                                       },
+                                                      "label": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -40707,6 +40941,15 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "age": {
+                                          "type": "integer"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "address": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -40824,6 +41067,15 @@
                     }
                   }
                 }
+              },
+              "age": {
+                "type": "integer"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
               },
               "createdAt": {
                 "type": "string",
@@ -45066,6 +45318,87 @@
                 "schema": {
                   "$ref": "#/components/schemas/Error"
                 }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/update-me": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UsersPermissionsUserResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Users-permissions - User"
+        ],
+        "parameters": [],
+        "operationId": "post/users/update-me",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsersPermissionsUserRequest"
               }
             }
           }
