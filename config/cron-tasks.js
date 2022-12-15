@@ -72,7 +72,7 @@ module.exports = {
             });
           return {
             name: product.name,
-            tokenDevice: token.token,
+            tokenDevice: token !== null ? token.token : null,
             userId: product.userId,
             productId: product.id,
           };
@@ -145,7 +145,7 @@ module.exports = {
             });
           return {
             name: product.name,
-            tokenDevice: token.token,
+            tokenDevice: token !== null ? token.token : null,
             userId: product.userId,
             productId: product.id,
           };
@@ -156,7 +156,7 @@ module.exports = {
         if (!product.tokenDevice) {
           continue;
         }
-        const message = `Product ${product.name} is to about expired !`;
+        const message = `Product ${product.name} is about to expired !`;
         const notification = await findNotification(
           product.userId,
           message,
