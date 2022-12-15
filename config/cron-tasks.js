@@ -116,7 +116,7 @@ module.exports = {
       await publishedNotifications();
     },
     options: {
-      rule: "0 9 * * *",
+      rule: "* * * * *",
     },
   },
   pushNotificationBestBeforeDateProduct: {
@@ -186,7 +186,7 @@ module.exports = {
       await publishedNotifications();
     },
     options: {
-      rule: "0 9 * * *",
+      rule: "* * * * *",
     },
   },
 };
