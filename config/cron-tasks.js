@@ -90,7 +90,7 @@ module.exports = {
           product.productId
         );
 
-        if (!notification && product.tokenDevice) {
+        if (!notification && product.tokenDevice !== null) {
           const noti = await strapi.entityService.create(
             "api::notification.notification",
             {
@@ -163,7 +163,7 @@ module.exports = {
           product.productId
         );
 
-        if (!notification && product.tokenDevice) {
+        if (!notification && product.tokenDevice !== null) {
           const noti = await strapi.entityService.create(
             "api::notification.notification",
             {
