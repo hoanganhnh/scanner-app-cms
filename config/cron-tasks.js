@@ -80,6 +80,9 @@ module.exports = {
       );
 
       for (const product of productNotifications) {
+        if (!product.tokenDevice) {
+          continue;
+        }
         const message = `Product ${product.name} is expired !`;
         const notification = await findNotification(
           product.userId,
@@ -150,6 +153,9 @@ module.exports = {
       );
 
       for (const product of productNotifications) {
+        if (!product.tokenDevice) {
+          continue;
+        }
         const message = `Product ${product.name} is to about expired !`;
         const notification = await findNotification(
           product.userId,
