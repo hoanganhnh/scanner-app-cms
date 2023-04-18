@@ -1709,6 +1709,29 @@
     styled-components "5.3.3"
     whatwg-fetch "^3.6.2"
 
+"@strapi/helper-plugin@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.6.0.tgz#8ea5bbcad4df688ba08fa20f19977056af4d9268"
+  integrity sha512-mMDY5kYuN7xEiOIO6P1/KltEssG7uwwcf+9pH0BHJc2jeO3SL5MvmBku7qjs2Nn+5uYcOezRBP9yCRP59eyBCQ==
+  dependencies:
+    axios "1.2.2"
+    date-fns "2.29.3"
+    formik "^2.2.6"
+    immer "9.0.6"
+    invariant "^2.2.1"
+    lodash "4.17.21"
+    match-sorter "^4.0.2"
+    qs "6.11.0"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-helmet "^6.1.0"
+    react-intl "5.25.1"
+    react-router "^5.2.0"
+    react-router-dom "5.3.4"
+    react-select "5.6.0"
+    styled-components "5.3.3"
+    whatwg-fetch "^3.6.2"
+
 "@strapi/icons@1.3.1":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@strapi/icons/-/icons-1.3.1.tgz#475a234a40df8b7711e4739379f2667375f05bdc"
@@ -1832,16 +1855,17 @@
     react-router-dom "5.2.0"
     sharp "0.31.0"
 
-"@strapi/plugin-users-permissions@4.5.2":
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.5.2.tgz#28f6fd808fdb0901ed50ad0a9dccd6c547df46ae"
-  integrity sha512-/ZYqGBWfy8ps+oVfZ9LDSdoX0SOU1GC8LBm3UUBJ50uPLZww8uauDwVY9v879U9YE8e6d9GGx1yAHlORligZ7A==
+"@strapi/plugin-users-permissions@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.6.0.tgz#52396c1f4f81e36f228f8a9d048345e1eed73c3e"
+  integrity sha512-60igsM/kMjt8p8m0UKgO797Z9PCviWCvVKGVwWs/om+oz98x1hQhralmyy/Yp+jfzxCn4YFGhmrjTpYsAuHjKw==
   dependencies:
-    "@strapi/helper-plugin" "4.5.2"
-    "@strapi/utils" "4.5.2"
+    "@strapi/helper-plugin" "4.6.0"
+    "@strapi/utils" "4.6.0"
     bcryptjs "2.4.3"
     grant-koa "5.4.8"
-    jsonwebtoken "^8.1.0"
+    jsonwebtoken "9.0.0"
+    jwk-to-pem "2.0.5"
     koa "^2.13.4"
     koa2-ratelimit "^1.1.2"
     lodash "4.17.21"
@@ -1851,7 +1875,7 @@
     react-intl "5.25.1"
     react-redux "7.2.8"
     react-router "^5.2.0"
-    react-router-dom "5.2.0"
+    react-router-dom "5.3.4"
     request "^2.83.0"
     url-join "4.0.1"
 
@@ -1959,13 +1983,24 @@
     prettier "2.7.1"
     typescript "4.6.2"
 
-"@strapi/utils@4.5.2", "@strapi/utils@^4.5.2":
+"@strapi/utils@4.5.2":
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.5.2.tgz#dca0ae17db94943de6e226e63647e03e32f0f664"
   integrity sha512-KnaU6zlqUtJbqVCXR/OxRC7BYV5eMZkNcuKPbwQ+MWwuh/nMp5hs023CtArQzyM/rDMIWpv01Tdwg2rcZpcIoA==
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "2.29.2"
+    http-errors "1.8.1"
+    lodash "4.17.21"
+    yup "0.32.9"
+
+"@strapi/utils@4.6.0", "@strapi/utils@^4.5.2":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.6.0.tgz#d2deec97fd21f9b802c858aa7a19c5d05850a467"
+  integrity sha512-zJfcGVlGLVGTs4Lc5OH+g4vO/+MD5UA6DzMzlSvJ1gsObYpA/a+IMRIMG90nfEKZ9R52LLdaYyGU8ALzxulEmQ==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    date-fns "2.29.3"
     http-errors "1.8.1"
     lodash "4.17.21"
     yup "0.32.9"
@@ -2763,6 +2798,15 @@ axios@0.27.2:
   dependencies:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
+
+axios@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.2.2.tgz#72681724c6e6a43a9fea860fc558127dbe32f9f1"
+  integrity sha512-bz/J4gS2S3I7mpN/YZfGFTqhXTYzRho8Ay38w2otuuDR322KzFIWm/4W2K6gIwvWaws5n+mnb7D1lN9uD+QH6Q==
+  dependencies:
+    follow-redirects "^1.15.0"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
 
 babel-loader@8.2.5:
   version "8.2.5"
@@ -3997,6 +4041,11 @@ date-fns@2.29.2:
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.29.2.tgz#0d4b3d0f3dff0f920820a070920f0d9662c51931"
   integrity sha512-0VNbwmWJDS/G3ySwFSJA3ayhbURMTJLtwM2DTxf9CWondCnh6DTNlO9JgRSq6ibf4eD0lfMJNBxUdEAHHix+bA==
 
+date-fns@2.29.3:
+  version "2.29.3"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.29.3.tgz#27402d2fc67eb442b511b70bbdf98e6411cd68a8"
+  integrity sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==
+
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -5033,7 +5082,7 @@ fn.name@1.x.x:
   resolved "https://registry.yarnpkg.com/fn.name/-/fn.name-1.1.0.tgz#26cad8017967aea8731bc42961d04a3d5988accc"
   integrity sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw==
 
-follow-redirects@^1.0.0, follow-redirects@^1.14.9:
+follow-redirects@^1.0.0, follow-redirects@^1.14.9, follow-redirects@^1.15.0:
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
@@ -6451,7 +6500,7 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonwebtoken@8.5.1, jsonwebtoken@^8.1.0:
+jsonwebtoken@8.5.1:
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz#00e71e0b8df54c2121a1f26137df2280673bcc0d"
   integrity sha512-XjwVfRS6jTMsqYs0EsuJ4LGxXV14zQybNd4L2r0UvbVnSF9Af8x7p5MzbJ90Ioz/9TI41/hTCvznF/loiSzn8w==
@@ -6466,6 +6515,16 @@ jsonwebtoken@8.5.1, jsonwebtoken@^8.1.0:
     lodash.once "^4.0.0"
     ms "^2.1.1"
     semver "^5.6.0"
+
+jsonwebtoken@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-9.0.0.tgz#d0faf9ba1cc3a56255fe49c0961a67e520c1926d"
+  integrity sha512-tuGfYXxkQGDPnLJ7SibiQgVgeDgfbPq2k2ICcbgqW8WxWLBAxKQM/ZCu/IT8SOSwmaYl4dpTFCW5xZv7YbbWUw==
+  dependencies:
+    jws "^3.2.2"
+    lodash "^4.17.21"
+    ms "^2.1.1"
+    semver "^7.3.8"
 
 jsprim@^1.2.2:
   version "1.4.2"
@@ -6495,7 +6554,7 @@ jwa@^2.0.0:
     ecdsa-sig-formatter "1.0.11"
     safe-buffer "^5.0.1"
 
-jwk-to-pem@^2.0.5:
+jwk-to-pem@2.0.5, jwk-to-pem@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/jwk-to-pem/-/jwk-to-pem-2.0.5.tgz#151310bcfbcf731adc5ad9f379cbc8b395742906"
   integrity sha512-L90jwellhO8jRKYwbssU9ifaMVqajzj3fpRjDKcsDzrslU9syRbFqfkXtT4B89HYAap+xsxNcxgBSB09ig+a7A==
@@ -8346,7 +8405,7 @@ proxy-agent@^5.0.0:
     proxy-from-env "^1.0.0"
     socks-proxy-agent "^5.0.0"
 
-proxy-from-env@^1.0.0:
+proxy-from-env@^1.0.0, proxy-from-env@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
   integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
@@ -8608,6 +8667,19 @@ react-router-dom@5.2.0:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
+react-router-dom@5.3.4:
+  version "5.3.4"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.3.4.tgz#2ed62ffd88cae6db134445f4a0c0ae8b91d2e5e6"
+  integrity sha512-m4EqFMHv/Ih4kpcBCONHbkT68KoAeHN4p3lAGoNryfHi0dMy0kCzEZakiKRsvg5wHZ/JLrLW8o8KomWiz/qbYQ==
+  dependencies:
+    "@babel/runtime" "^7.12.13"
+    history "^4.9.0"
+    loose-envify "^1.3.1"
+    prop-types "^15.6.2"
+    react-router "5.3.4"
+    tiny-invariant "^1.0.2"
+    tiny-warning "^1.0.0"
+
 react-router@5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-5.2.0.tgz#424e75641ca8747fbf76e5ecca69781aa37ea293"
@@ -8624,7 +8696,7 @@ react-router@5.2.0:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-router@^5.2.0:
+react-router@5.3.4, react-router@^5.2.0:
   version "5.3.4"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-5.3.4.tgz#8ca252d70fcc37841e31473c7a151cf777887bb5"
   integrity sha512-Ys9K+ppnJah3QuaRiLxk+jDWOR1MekYQrlytiXxC1RyfbdsZkS5pvKAzCCr031xHixZwpnsYNT5xysdFHQaYsA==
